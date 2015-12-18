@@ -8,6 +8,6 @@ class Pyamg < Formula
   depends_on 'numpy' => :python
 
   def install
-    system "python", "-s", "setup.py", "install"
+    system "sudo python", "-s", "setup.py", "install"
   end
 end
