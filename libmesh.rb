@@ -1,4 +1,4 @@
-class Petsc < Formula
+class libmesh < Formula
   homepage 'http://libmesh.sourceforge.net'
   url 'https://github.com/libMesh/libmesh.git'
 
