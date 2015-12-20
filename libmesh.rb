@@ -1,5 +1,3 @@
-require 'formula'
-
 class Petsc < Formula
   homepage 'http://libmesh.sourceforge.net'
   url 'https://github.com/libMesh/libmesh.git'
