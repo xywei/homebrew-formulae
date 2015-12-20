@@ -6,6 +6,7 @@ class Petsc < Formula
 
   depends_on :mpi => :cc
   depends_on 'petsc'
+  depends_on 'vtk5'
 
   def install
     ENV.deparallelize
