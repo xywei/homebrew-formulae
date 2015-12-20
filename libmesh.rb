@@ -1,4 +1,4 @@
-class libmesh < Formula
+class Libmesh < Formula
   homepage 'http://libmesh.sourceforge.net'
   url 'https://github.com/libMesh/libmesh.git'
 
