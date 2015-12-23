@@ -11,9 +11,7 @@ class Libmesh < Formula
     system "export CC=mpicc"
     system "export FC=mpif90"
     system "export F77=mpif77"
-    system "export LDFLAGS=-L/opt/X11/lib"
-    system "export CXXFLAGS=-I/opt/X11/include"
-    system "export CPPFLAGS=-I/opt/X11/include"
+    system "ln -s /opt/X11/include/X11 ./include/X11"
     system "./configure", *args
     system "make"
     system "make install"
