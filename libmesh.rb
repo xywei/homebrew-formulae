@@ -6,7 +6,13 @@ class Libmesh < Formula
 
   def install
     ENV.deparallelize
-    args = ["--prefix=#{prefix} --enable-mpi --enable-examples --enable-petsc --enable-slepc CXX=mpicxx CC=mpicc FC=mpif90 F77=mpif77 CXXFLAGS=-I/opt/X11/include LDFLAGS=-L/opt/X11/lib"]
+    args = ["--prefix=#{prefix} --enable-mpi --enable-examples --enable-petsc --enable-slepc"]
+    system "export CXX=mpicxx"
+    system "export CC=mpicc"
+    system "export FC=mpif90"
+    system "export F77=mpif77"
+    system "export LDFLAGS=-L/opt/X11/lib"
+    system "export CXXFLAGS=-I/opt/X11/include"
     system "./configure", *args
     system "make"
     system "make install"
